@@ -1,31 +1,117 @@
 <html>
 
 <head>
+	<!-- style="background-color:powderblue;" /-->
 	<title>LoginPage</title>
+	
+	<link rel="stylesheet" href="style.css">
+	
+	
+	<!-- Iternal  css /-->
+	<!--style>
+		body {background-color: powderblue;}
+		h1   {color: blue;}
+		p    {color: red;}
+		div  {font-family:courier;background-color:#7CFC00;font-size:125%;text-align:center;}
+	</style/-->
+	
 </head>
 
-<body>
-	UserName<input type="text" id="uname"></input><br><br>
-	Password<input type="password" id="pwd"></input><br><br>
-	<input type="button" id="okbtn" value="OK"></input>
-	<button id="canbtn" >Cancel</button><br><br>
-	<img src="logo.png" width="100" height="100" id="logo" alt="logoImage" title="AutomatioRun"><img> <br>
+
+
+
+<body >
+
+	<div id="div1" >
+		UserName<input type="text" id="uname"></input><br><br>
+		Password<input type="password" id="pwd"></input><br><br>
+		<input type="button" id="okbtn" value="OK"></input>
+		<button id="canbtn" >Cancel</button><br><br>
+		<input type="checkbox" id="rem1" name="rem" checked>Remember Me</input><br><br>
+		<a href="https://google.com"  >Forgot Password</a><br>
+	</div>	
+		
+	
+	<a href="https://automationrun.com" id="website">
+		<img src="seleniumimage.jpg" width="100" height="100" id="logo" alt="logoImage" title="AutomatioRun"><img> <br>
+	</a>
 	<br>
-	<a href="https://google.com" id="forgotpwd" name="forlink" >Forgot Password</a><br>
+	
 	<a href="https://mail.yahoo.com" id="home" name="home" >Home</a><br><br>
 	
-	<input type="radio" id="male" name="mRadio" >Male</input><br>
-	<input type="radio" id="Fmale" name="FRadio" >Female</input><br>
+	<input type="radio" id="male" name="gender" value="male">Male</input><br>
+	<input type="radio" id="fmale" name="gender" value="fmale" checked>Female</input><br>
+	<input type="radio" id="others" name="gender" value="others">others</input><br><br>
 	
+	
+		Select State:<select name="state" id="state" >
+			<option value="KA">Karnataka</option>
+			<option value="AP">Andhra</option>
+			<option value="TS" selected>Telangana</option>
+			<option value="TN">TamilNadu</option>
+		</select> <br><br>
+		
+		<label>Select your car</label>
+		<select name="cars1" id="cars1" multiple>
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="opel">Opel</option>
+			<option value="audi">Audi</option>
+  </select><br><br>
+  
+  <table id=table1 name="emp" border="2"> 
+	<tbody>
+		<th>EmpId</th>
+		<th>EmpName</th>
+		<th>Salary</th>
+		<th>Email</th>
+	
+	<tr>
+		<td>120</td>
+		<td>Ramu</td>
+		<td>45000</td>
+		<!--td><input type="checkbox" id="sal1" name="sal1" >45000</input></td/-->
+		<td><a href="https://google.com" id="emp1" name="emp1" >ramu@gmail.com</a></td>
+	</tr>
+	
+	<tr>
+		<td>150</td>
+		<td>Shamu</td>
+		<td>55000</td>
+		<td><a href="https://google.com" id="emp2" name="emp2" >Shamu@gmail.com</a></td>		
+	</tr>
+	
+	<tr>
+		<td>180</td>
+		<td>Radha</td>
+		<td>65000</td>
+		<td><a href="https://google.com" id="emp3" name="emp3" >radha@gmail.com</a></td>				
+		
+	</tr>
+	
+	<tbody>  
+  
+  </table>
+		<br>
+		
+		<!-- inline css /-->
+	<span style="background-color:#7CFC00;">The below section shows  few more tags</span>
+	
+	<label>The below section shows  few more tags</label>
+		
 	<h1>Please enter your details</h1>
 	
 	<h2>Please enter your details</h2>
 	
 	<h3>Please enter your details</h3>
 	
-	<p>This is a sample web Page
-	This is used for learning html
+	<p>This is a sample web Page <br>
+	This is used for learning html<br>
 	html is must for UI automation<p>
+	
+	
+	
+		
 
 </body>
 
